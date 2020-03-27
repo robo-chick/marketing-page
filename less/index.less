@@ -93,6 +93,7 @@ table {
 @white: #FFFFFF;
 @midnight: #191970;
 @fire: #B22222;
+@dimgray: #696969;
 
 // media query
 @mobile: ~"(max-width: 500px)";
@@ -247,10 +248,6 @@ a:hover {
     align-items: center;
     padding-top: 2%;
     margin-left: 7%;
-
-    p {
-      text-align: center;
-    }
 }
 
 .content {
@@ -258,24 +255,67 @@ a:hover {
     justify-content: space-evenly;
     padding-left: 10%;
     padding-top: 2%;
-    border: 1px solid;
-
 
     img {
-        .img-size(200px, 200x);
+        .img-size(200px, 200px);
         border-radius: 10px;
     }
 
     .btn {
         color: @white;
-        border: 1px solid @midnight;
         background: @midnight;
-        .btn-size(11%, 70%);
-        font-size: 3.5rem;
+        .btn-size(10.5%, 50%);
+        font-size: 2rem;
         font-family: 'Ubuntu', sans-serif;
         text-align: center;
         border-radius: 5px;
+        padding-top: 3%;
     }
+
+    .btn:hover {
+        background: @dimgray;
+    }
+}
+
+.leftContent {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.middleContent {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.rightContent {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.bottomNav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+
+    a {
+        color: @midnight;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2rem;
+    }
+
+    a:hover {
+        color: @dimgray;
+    }
+}
+
+footer {
+    padding-top: 5%;
+    text-align: center;
+    color: @midnight;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 

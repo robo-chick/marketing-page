@@ -274,29 +274,62 @@ a:hover {
   padding-top: 2%;
   margin-left: 7%;
 }
-.topSection p {
-  text-align: center;
-}
 .content {
   display: flex;
   justify-content: space-evenly;
   padding-left: 10%;
   padding-top: 2%;
-  border: 1px solid;
 }
 .content img {
   height: 200px;
-  width: 200x;
+  width: 200px;
   border-radius: 10px;
 }
 .content .btn {
   color: #FFFFFF;
-  border: 1px solid #191970;
   background: #191970;
-  height: 11%;
-  width: 70%;
-  font-size: 3.5rem;
+  height: 10.5%;
+  width: 50%;
+  font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   border-radius: 5px;
+  padding-top: 3%;
+}
+.content .btn:hover {
+  background: #696969;
+}
+.leftContent {
+  width: 60%;
+  margin-left: 5%;
+}
+.middleContent {
+  width: 60%;
+  margin-left: 5%;
+}
+.rightContent {
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+.bottomNav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+.bottomNav a {
+  color: #191970;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+}
+.bottomNav a:hover {
+  color: #696969;
+}
+footer {
+  padding-top: 5%;
+  text-align: center;
+  color: #191970;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
 }
