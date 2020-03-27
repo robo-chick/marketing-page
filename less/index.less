@@ -61,6 +61,7 @@ table {
   
   h1, h2, h3, h4, h5 {
     font-family: 'Exo', sans-serif;
+    color: @midnight;
   }
   
   h1 {
@@ -96,6 +97,17 @@ table {
 // media query
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
+
+// mixins
+.img-size(@h, @w) {
+    height: @h;
+    width: @w;
+}
+
+.btn-size(@h, @w) {
+    height: @h;
+    width: @w;
+}
    
 body {
     color: black;
@@ -208,6 +220,69 @@ a:hover {
     transform: scale(1.0, 1.0);
     opacity: 1;
 }
+
+.topHeading {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.topImages {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    margin-left: 7%;
+    
+
+    img {
+        .img-size(auto, 48%);
+        border-radius: 5px;
+    }
+}
+
+.topSection {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    margin-left: 7%;
+
+    p {
+      text-align: center;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-top: 2%;
+    border: 1px solid;
+
+
+    img {
+        .img-size(200px, 200x);
+        border-radius: 10px;
+    }
+
+    .btn {
+        color: @white;
+        border: 1px solid @midnight;
+        background: @midnight;
+        .btn-size(11%, 70%);
+        font-size: 3.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+    
 
 
 

@@ -142,6 +142,7 @@ h3,
 h4,
 h5 {
   font-family: 'Exo', sans-serif;
+  color: #191970;
 }
 h1 {
   font-size: 4rem;
@@ -248,4 +249,54 @@ a:hover {
 #menuToggle input:checked ~ ul {
   transform: scale(1, 1);
   opacity: 1;
+}
+.topHeading {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.topImages {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  margin-left: 7%;
+}
+.topImages img {
+  height: auto;
+  width: 48%;
+  border-radius: 5px;
+}
+.topSection {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  margin-left: 7%;
+}
+.topSection p {
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  padding-top: 2%;
+  border: 1px solid;
+}
+.content img {
+  height: 200px;
+  width: 200x;
+  border-radius: 10px;
+}
+.content .btn {
+  color: #FFFFFF;
+  border: 1px solid #191970;
+  background: #191970;
+  height: 11%;
+  width: 70%;
+  font-size: 3.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  border-radius: 5px;
 }
