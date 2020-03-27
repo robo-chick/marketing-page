@@ -164,6 +164,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+.midnight {
+  text-shadow: 0 1px 0 #000000;
+  border: 1px solid #06061d;
+  box-shadow: inset 0px 1px 0 #2c2cc3;
+  background: #191970;
+}
+.midnight:hover {
+  background: #22229a;
+}
+.midnight:active {
+  background: #14145b;
+  box-shadow: inset 0px 1px 2px #000000;
+}
 body {
   color: black;
   overflow-x: hidden;
@@ -285,19 +298,13 @@ a:hover {
   width: 200px;
   border-radius: 10px;
 }
-.content .btn {
-  color: #FFFFFF;
-  background: #191970;
-  height: 10.5%;
-  width: 50%;
-  font-size: 2rem;
+.content .button {
+  font: bold;
   font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  border-radius: 5px;
-  padding-top: 3%;
-}
-.content .btn:hover {
-  background: #696969;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 10px 20px;
 }
 .leftContent {
   width: 60%;

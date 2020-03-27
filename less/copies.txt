@@ -1,0 +1,14 @@
+  .btn {
+        color: @white;
+        background: @midnight;
+        .btn-size(10.5%, 50%);
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 3%;
+    }
+
+    .btn:hover {
+        background: @dimgray;
+    }

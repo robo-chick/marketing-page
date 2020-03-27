@@ -95,6 +95,9 @@ table {
 @fire: #B22222;
 @dimgray: #696969;
 
+// button color class
+.midnight {.color-magic(@midnight);}
+
 // media query
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
@@ -109,7 +112,7 @@ table {
     height: @h;
     width: @w;
 }
-   
+
 body {
     color: black;
     overflow-x: hidden;
@@ -260,22 +263,29 @@ a:hover {
         .img-size(200px, 200px);
         border-radius: 10px;
     }
-
-    .btn {
-        color: @white;
-        background: @midnight;
-        .btn-size(10.5%, 50%);
-        font-size: 2rem;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        border-radius: 5px;
-        padding-top: 3%;
-    }
-
-    .btn:hover {
-        background: @dimgray;
-    }
+        .button {
+            font: bold;
+            font-family: 'Ubuntu', sans-serif;
+            color:#fff;
+            text-decoration: none;
+            border-radius:6px;
+            padding: 10px 20px;
+          } 
 }
+
+.color-magic(@color) {
+    text-shadow: 0 1px 0 darken(@color,30%);
+    border: 1px solid darken(@color, 20%);
+    box-shadow: inset 0px 1px 0 lighten(@color, 20%);
+    background: (@color);
+    &:hover{
+      background: lighten(@color,10%);
+    }
+    &:active{
+      background: darken(@color,5%);
+      box-shadow: inset 0px 1px 2px darken(@color,30%);
+    }
+  }
 
 .leftContent {
     width: 60%;
