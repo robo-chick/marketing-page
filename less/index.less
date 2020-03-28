@@ -189,6 +189,7 @@ a:hover {
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
+    display: hidden;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
@@ -228,47 +229,80 @@ a:hover {
 .topHeading {
     display: flex;
     justify-content: center;
-    padding-top: 2%;
-}
+    margin-top: 3%;
 
-.topImages {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5%;
-    margin-left: 7%;
-    
+    h1 {
+        @media @mobile {
+            font-size: 3rem;
+        }
+    }
 
-    img {
-        .img-size(auto, 48%);
-        border-radius: 10px;
+    @media @mobile {
+        justify-content: flex-start;
+        margin-top: 13%;
+        margin-left: 5%;
     }
 }
 
-.topSection {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    margin-left: 7%;
-}
+.home {
 
-.content {
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 10%;
-    padding-top: 2%;
+    .topImages {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1%;
+        
+        
+        img {
+            .img-size(auto, 48%);
+            border-radius: 10px;
+        }
 
-    img {
-        .img-size(300px, 300px);
-        border-radius: 10px;
-        margin-bottom: 3%;
+        @media @mobile {
+            margin-left: 1%;
+        }
     }
 
-    p {
-        margin-bottom: 3%;
-        width: 70%;
+    .topSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;    
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            @media @mobile {
+                font-size: 2.5rem;
+            }
+        }
     }
+
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2%;
+        
+        img {
+            .img-size(auto, 55%);
+            border-radius: 10px;
+            margin-bottom: 3%;
+
+            @media @mobile {
+                .img-size(auto, 100%);
+            }
+        }
+
+        p {
+            margin-bottom: 3%;
+            width: 70%;
+
+            @media @mobile {
+                width: 90%;
+            }
+        }
+
         .button {
             font: bold;
             font-size: 1.5rem;
@@ -277,7 +311,48 @@ a:hover {
             text-decoration: none;
             border-radius:6px;
             padding: 10px 20px;
-          } 
+        }           
+    
+
+        .leftContent {
+            width: 60%;
+            margin-left: 5%;
+
+            @media @mobile {
+                width: 85%;
+                margin-left: 0;
+            }
+        }
+
+        .middleContent {
+            width: 60%;
+            margin-left: 5%;
+
+            @media @mobile {
+                width: 85%;
+                margin-left: 0;
+                margin-top: 6%;
+            }
+        }
+
+        .rightContent {
+            width: 60%;
+            margin-left: 5%;
+
+            @media @mobile {
+                width: 85%;
+                margin-left: 0;
+                margin-top: 6%;
+            }
+           
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
 }
 
 .color-magic(@color) {
@@ -285,48 +360,38 @@ a:hover {
     border: 1px solid darken(@color, 20%);
     box-shadow: inset 0px 1px 0 lighten(@color, 20%);
     background: (@color);
-    &:hover{
-      background: lighten(@color,10%);
-    }
-    &:active{
-      background: darken(@color,5%);
-      box-shadow: inset 0px 1px 2px darken(@color,30%);
-    }
-  }
-
-
-.leftContent {
-    width: 60%;
-    margin-left: 5%;
-}
-
-.middleContent {
-    width: 60%;
-    margin-left: 5%;
-}
-
-.rightContent {
-    width: 60%;
-    margin-left: 5%;
-    margin-right: 3%;
-}
-
-.bottomNav {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5%;
-
-    a {
-        color: @midnight;
-        text-decoration: none;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 2rem;
+     &:hover{
+     background: lighten(@color,10%);
     }
 
-    a:hover {
-        color: @dimgray;
-    }
+     &:active{
+     background: darken(@color,5%);
+     box-shadow: inset 0px 1px 2px darken(@color,30%);
+     }
 }
+    
+    .bottomNav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 5%;
+
+        a {
+            color: @midnight;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2rem;
+
+            @media @mobile {
+                font-size: 1.5rem;
+                margin-top: 2%;
+            }
+        }
+
+        a:hover {
+            color: @dimgray;
+        }
+    }
+
 
 footer {
     padding: 5% 0 2% 0;
@@ -334,6 +399,10 @@ footer {
     color: @midnight;
     font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
+
+    @media @mobile {
+        font-size: 1rem;
+    }
 }
 
 
