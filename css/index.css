@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 html {
   font-size: 62.5%;
 }
@@ -176,10 +179,6 @@ img {
 .midnight:active {
   background: #14145b;
   box-shadow: inset 0px 1px 2px #000000;
-}
-body {
-  color: black;
-  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -281,6 +280,11 @@ a:hover {
     margin-left: 5%;
   }
 }
+@media (max-width: 800px) {
+  .topHeading {
+    margin-bottom: 2%;
+  }
+}
 .home .topImages {
   display: flex;
   justify-content: space-evenly;
@@ -296,6 +300,11 @@ a:hover {
     margin-left: 1%;
   }
 }
+@media (max-width: 800px) {
+  .home .topImages {
+    margin-left: 4%;
+  }
+}
 .home .topSection {
   display: flex;
   flex-direction: column;
@@ -308,6 +317,11 @@ a:hover {
 @media (max-width: 500px) {
   .home .topSection h2 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .home .topSection {
+    margin-left: 4%;
   }
 }
 .home .content {

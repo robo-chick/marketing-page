@@ -50,6 +50,10 @@ table {
 * {
     box-sizing: border-box;
   }
+
+  body {
+    overflow-x: hidden;
+}
   
   html {
     font-size: 62.5%;
@@ -111,11 +115,6 @@ table {
 .btn-size(@h, @w) {
     height: @h;
     width: @w;
-}
-
-body {
-    color: black;
-    overflow-x: hidden;
 }
 
 a {
@@ -242,6 +241,11 @@ a:hover {
         margin-top: 13%;
         margin-left: 5%;
     }
+
+    @media @tablet {
+        margin-bottom: 2%;
+    }
+
 }
 
 .home {
@@ -260,6 +264,10 @@ a:hover {
         @media @mobile {
             margin-left: 1%;
         }
+
+        @media @tablet {
+            margin-left: 4%;
+        }
     }
 
     .topSection {
@@ -276,6 +284,10 @@ a:hover {
             @media @mobile {
                 font-size: 2.5rem;
             }
+        }
+
+        @media @tablet {
+            margin-left: 4%;
         }
     }
 
