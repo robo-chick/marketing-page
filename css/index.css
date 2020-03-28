@@ -277,7 +277,7 @@ a:hover {
 .topImages img {
   height: auto;
   width: 48%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .topSection {
   width: 85%;
@@ -294,12 +294,18 @@ a:hover {
   padding-top: 2%;
 }
 .content img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 10px;
+  margin-bottom: 3%;
+}
+.content p {
+  margin-bottom: 3%;
+  width: 70%;
 }
 .content .button {
   font: bold;
+  font-size: 1.5rem;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   text-decoration: none;
@@ -334,7 +340,7 @@ a:hover {
   color: #696969;
 }
 footer {
-  padding-top: 5%;
+  padding: 5% 0 2% 0;
   text-align: center;
   color: #191970;
   font-size: 1.5rem;
